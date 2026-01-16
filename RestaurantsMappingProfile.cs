@@ -21,7 +21,10 @@ namespace restaurantAPI
 
             CreateMap<UpdateRestaurantDto, Restaurant>();
 
+            CreateMap<CreateDishDto, Dish>();
 
+            //CreateMap<CreateDishDto, Dish>()
+            //    .ForMember(d => d.RestaurantId, opt => opt.Ignore());
         }
     }
 }
